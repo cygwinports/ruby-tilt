@@ -1,7 +1,7 @@
 inherit rubygem
 
 NAME="ruby-tilt"
-VERSION=1.3.3
+VERSION=1.4.1
 RELEASE=1
 CATEGORY="Ruby"
 SUMMARY="Ruby template engine interface"
