@@ -2,7 +2,15 @@ inherit rubygem
 
 NAME="ruby-tilt"
 VERSION=1.4.1
-RELEASE=1
+RELEASE=2
 CATEGORY="Ruby"
 SUMMARY="Ruby template engine interface"
 DESCRIPTION="Generic interface to multiple Ruby template engines"
+
+PATCH_URI="1.4.1-rubygems24.patch"
+
+ARCH=noarch
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_tilt_CONTENTS="usr/bin/tilt ${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
+ruby_tilt_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
